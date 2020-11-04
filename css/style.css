@@ -379,7 +379,7 @@ input::-webkit-input-placeholder {
     align-items: center;
     width: 223px;
     height: 45px;
-    background-color: #1367CD;
+    background-color: #2E2E2E;
     border-radius: 20px;
     color: white;
     transition-property: background-color;
@@ -822,7 +822,7 @@ input::-webkit-input-placeholder {
     align-self: flex-end;    
     width: 223px;
     height: 45px;
-    background-color: #1367CD;
+    background-color: #2E2E2E;
     border-radius: 20px;
     color: white;
     margin: 0 -420px 200px 0;
