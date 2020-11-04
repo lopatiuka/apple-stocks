@@ -374,27 +374,25 @@ input::-webkit-input-placeholder {
 }
 
 .intro .container .content .form-container form input[type=submit] {
-    width: auto;
-    border-radius: 42.5px;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #1367CD;
-    background-color: inherit;
-    border: none;
-    margin-bottom: 100px;
-    transition-property: color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 223px;
+    height: 45px;
+    background-color: #1367CD;
+    border-radius: 20px;
+    color: white;
+    transition-property: background-color;
     transition-duration: 0.2s;
 }
 
 .intro .container .content .form-container form input[type=submit]:hover{
-    color: #0A57B4;
+    background-color: #2E2E2E;
     cursor: pointer; 
-    text-decoration: underline;
 }
 
 .intro .container .content .form-container form input[type=submit]:active{
-    background-color: #EA8C00;
+    background-color: #0A52A9;
 }
 
 .intro .container .content .form-container form .checkboxes {
@@ -808,7 +806,7 @@ input::-webkit-input-placeholder {
     justify-content: flex-end;
     align-items: flex-end;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 
 .how-works .container .how-works-bottom img {
@@ -821,26 +819,27 @@ input::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: flex-end;
-    width: auto;
-    height: auto;
-    margin: 0 -370px 200px 0;
+    align-self: flex-end;    
+    width: 223px;
+    height: 45px;
+    background-color: #1367CD;
+    border-radius: 20px;
+    color: white;
+    margin: 0 -420px 200px 0;
     z-index: 10;
     font-size: 18px;
-    line-height: 22px;
-    color: #1367CD;
     text-decoration: none;
-    transition: color, 0.3s linear;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .how-works .container .start-now-link:hover {
-    color: #1367CD;
-    text-decoration: underline;
+    background-color: #2E2E2E;
     cursor: pointer;
 }
 
 .how-works .container .start-now-link:active {
-    background-color: #E4A400;
+    background-color: #0A52A9;
 }
 
 .faq .container {
@@ -1616,11 +1615,11 @@ details[open] summary .round-button {
     .how-works .container .how-works-bottom {
         margin-left: 0;
         width: 100%;
-        height: 300px;
+        height: 350px;
     }
     
     .how-works .container .how-works-bottom .start-now-link {
-       margin: 0 -400px 300px 0;
+       margin: 0 -430px 300px 0;
     }
 
     .how-works .container .how-works-bottom img:nth-child(1) {
@@ -2130,11 +2129,11 @@ details[open] summary .round-button {
     }
 
     .how-works .container .how-works-bottom {
-        height: 400px;
+        height: 450px;
     }
 
     .how-works .container .how-works-bottom .start-now-link {
-        margin: 0 -400px 400px 0;
+        margin: 0 -430px 400px 0;
     }
 
     .how-works .container .how-works-bottom img:nth-child(1) {
@@ -2394,7 +2393,7 @@ details[open] summary .round-button {
     .menu-container .hide {
         float: right;
         margin: 15px;
-        font-size: 20px;
+        font-size: 40px;
     }
     
     .menu-container .hide:hover {
@@ -2917,7 +2916,7 @@ details[open] summary .round-button {
     .menu-container .hide {
         float: right;
         margin: 15px;
-        font-size: 20px;
+        font-size: 40px;
     }
     
     .menu-container .hide:hover {
@@ -3422,7 +3421,7 @@ details[open] summary .round-button {
 
 @media ( max-device-width: 320px ) {
     body {
-        width: 870px;
+        width: 921.5px;
         margin: 0;
         overflow-x: hidden;
     }
