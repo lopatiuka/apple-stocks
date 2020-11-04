@@ -95,7 +95,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;  
-  background-color: #2E2E2E;
 }
 
 header .container {
@@ -133,7 +132,7 @@ header .exposure .caption {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center; 
-    color: white;
+    color: #606060;
     margin: 10px; 
 }
 header .exposure .country p {
@@ -143,7 +142,7 @@ header .exposure .country p {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-    color: white;
+    color: #606060;
     margin: 0; 
     text-transform: uppercase;
 }
@@ -158,14 +157,15 @@ header .container .main-content .navigation{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-self: flex-end;
+    align-self: center;
     margin-left: 10px;
     margin-bottom: 2px;
+    margin-top: 10px;
 }
 header .container .main-content .navigation a {
     margin-right: 30px;
     text-decoration: none;
-    color: white;
+    color: #606060;
 }
 header .container .main-content .navigation a:hover {
     font-weight: 700;
@@ -175,7 +175,9 @@ header .container .main-content .navigation a:active {
     font-weight: 700;
 }
 header .container .main-content img {
-  margin-right: 40px;
+    margin-right: 40px;
+    width: 244.95px;
+    height: 62px;
 }
 header .container .header-country {
   flex-direction: row;
@@ -216,7 +218,7 @@ header .container .header-country .header-image {
     width: 100%;
     height: 2px;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: #606060;
     border-radius: 10px;
 }
 
@@ -306,11 +308,13 @@ main {
     margin-left: 20px;
     box-shadow: 0px 4px 25px rgba(79, 79, 79, 0.1);
     border-radius: 30px;
-    background-color: #2E2E2E;
+    background-image: linear-gradient(90deg, #F3F3F3 0%, #F9F8F8 51.56%, #F3F3F3 100%);
 }
 
 .intro .container .content .form-container img {
     margin-top: 50px;
+    width: 166.99px;
+    height: 100px;    
 }
 
 .intro .container .content .form-container h2 {
@@ -320,7 +324,7 @@ main {
     line-height: 33px;
     letter-spacing: 0em;
     text-align: center;
-    color: white;
+    color: #606060;
 }
 
 .intro .container .content .form-container h3 {
@@ -331,7 +335,7 @@ main {
 
     text-align: center;
 
-    color: white;
+    color: #606060;
 }
 
 .intro .container .content .form-container form {
@@ -345,24 +349,24 @@ main {
     height: 30px;
     margin: 5px;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #606060;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: #606060;
     margin-top: 30px;
     background-color: inherit;
 }
 
 input::-moz-placeholder { 
-    color: white; 
+    color: #606060; 
 }
 
 input::-webkit-input-placeholder { 
-    color: white; 
+    color: #606060; 
 }
 
 .intro .container .content .form-container form input:focus {
@@ -422,7 +426,7 @@ input::-webkit-input-placeholder {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: #606060;
 }
 
 .intro .container .content .form-container form .checkboxes label span a {
@@ -1930,18 +1934,13 @@ details[open] summary .round-button {
         justify-content: center;
     }
 
-    header .container .main-content img {
-        width: 125px;
-        height: 75px;
-    }
-
     header .container .main-content .navigation {
         display: none;
         position: absolute;
     }
 
     header .exposure {
-        right: -200px;
+        right: -50px;
         left: initial;
     }
 
@@ -2188,13 +2187,12 @@ details[open] summary .round-button {
 }
 
 @media ( max-width: 768px ) {
-    header .exposure .caption {
-        font-size: 14px;
+    header .exposure {
+        right: -180px;
     }
 
-    header .container .main-content img {
-        width: 125px;
-        height: 75px;
+    header .exposure .caption {
+        font-size: 14px;
     }
 
     .about .container .about-header {
@@ -2318,6 +2316,12 @@ details[open] summary .round-button {
     }
 }
 
+@media ( max-width: 617px ) {
+    header .exposure {
+        right: -230px;
+    }
+}
+
 @media ( max-device-width: 880px ) {
     body {
         width: 872px;
@@ -2436,12 +2440,12 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header {
-        align-self: center;
+        align-self: flex-start;
     }
 
     .intro .container .content .video-container .video-header h1 {
         font-size: 36px;
-        text-align: center;
+        text-align: left;
     }
 
     .intro .container .content .video-container .video-header p {
@@ -2959,12 +2963,12 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header {
-        align-self: center;
+        align-self: flex-start;
     }
 
     .intro .container .content .video-container .video-header h1 {
         font-size: 36px;
-        text-align: center;
+        text-align: left;
     }
 
     .intro .container .content .video-container .video-header p {
@@ -3410,6 +3414,12 @@ details[open] summary .round-button {
     }
 }
 
+@media ( max-device-width: 400px ) {
+    header .exposure {
+        right: -500px;
+    }
+}
+
 @media ( max-device-width: 320px ) {
     body {
         width: 870px;
@@ -3438,7 +3448,7 @@ details[open] summary .round-button {
         display: flex;
         flex-direction: column;
         top: 0;
-        right: -600px;
+        right: -650px;
         width: 310px;
         align-items: flex-start;
     }
@@ -3451,12 +3461,12 @@ details[open] summary .round-button {
     }
 
     header .exposure .country p {
-        font-size: 25px;
+        font-size: 18px;
         margin-left: 10px;
     }
 
     header .exposure .caption {
-        font-size: 25px;
+        font-size: 18px;
     }
   
 
@@ -3470,12 +3480,12 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header {
-        align-self: center;
+        align-self: flex-start;
     }
 
     .intro .container .content .video-container .video-header h1 {
         font-size: 90px;
-        text-align: center;
+        text-align: left;
         line-height: 100px;
     }
 
