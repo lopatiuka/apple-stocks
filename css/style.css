@@ -253,7 +253,7 @@ main {
 
 .intro .container .content .video-container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
     width: 1255px;
     height: auto;
@@ -262,6 +262,7 @@ main {
 
 .intro .container .content .video-container .video-header {
     align-self: flex-start;
+    margin-bottom: 150px;
 }
 
 .intro .container .content .video-container .video-header h1 {
@@ -274,12 +275,13 @@ main {
     text-transform: uppercase;
     color: #2E2E2E;
     margin-bottom: 0;
+    width: 1650px;
 }
 
 .intro .container .content .video-container p {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 150%;
     text-align: left;
     color: #2E2E2E;
@@ -456,6 +458,10 @@ input::-webkit-input-placeholder {
     margin: 10px;
 }
 
+.intro .ribbon p:last-child {
+    font-size: 18px;
+}
+
 .intro .ribbon .logos {
     display: flex;
     justify-content: space-around;
@@ -552,6 +558,14 @@ input::-webkit-input-placeholder {
     color: #B3B3B3;
     margin-right: 50px;
 }
+
+.about .container .history .disclaimer {
+    font-size: 14px;
+    align-self: flex-start;
+    margin-top: 30px;
+    color: #B3B3B3;
+}
+
 
 .about .container .description p{
     display: inline-block;
@@ -724,6 +738,11 @@ input::-webkit-input-placeholder {
     font-weight: bold;
 }
 
+.growth .container .few-things .source {
+    align-self: flex-start;
+    margin-left: 35px;
+}
+
 .how-works {
     background-color: #F1F2F1;
 }
@@ -825,7 +844,7 @@ input::-webkit-input-placeholder {
     background-color: #2E2E2E;
     border-radius: 20px;
     color: white;
-    margin: 0 -420px 200px 0;
+    margin: 0 -450px 200px 0;
     z-index: 10;
     font-size: 18px;
     text-decoration: none;
@@ -1094,6 +1113,10 @@ details[open] summary .round-button {
         height: 668.73px;
     }
 
+    .how-works .container .how-works-bottom .start-now-link {
+        width: 260px;
+    }
+
     .faq .container .answers details {
         width: 2550px;
     }
@@ -1243,6 +1266,10 @@ details[open] summary .round-button {
         z-index: -1;
     }
 
+    .how-works .container .how-works-bottom .start-now-link {
+        width: 260px;
+    }
+
     .faq .container .answers details {
         width: 2000px;
     }
@@ -1263,10 +1290,13 @@ details[open] summary .round-button {
     }
     .intro .container .content .video-container .video-header h1 {
         font-weight: 700;
+        font-size: 43px;
+        width: 1300px;
     }
 
     .intro .container .content .video-container .video-header {
         align-self: flex-start;
+        margin-bottom: 100px;
     }
 
     .intro .container .content .form-container {
@@ -1442,13 +1472,15 @@ details[open] summary .round-button {
         width: 657.2px;
         height: auto;
     }
+
     .intro .container .content .video-container .video-header h1 {
         font-size: 54px;
         text-align: left;
+        width: 1000px;
     }
 
     .intro .container .content .video-container .video-header {
-        align-self: center;
+        margin-bottom: 70px;
     }
 
     .intro .container .content .form-container {
@@ -1696,9 +1728,11 @@ details[open] summary .round-button {
         width: 657.2px;
         height: auto;
     }
+
     .intro .container .content .video-container .video-header h1 {
         font-size: 54px;
         text-align: left;
+        width: auto;
     }
 
     .intro .container .content .video-container .video-header {
