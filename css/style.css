@@ -240,7 +240,6 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 70px;
 }
 
 .intro .container .content {
@@ -262,7 +261,7 @@ main {
 
 .intro .container .content .video-container .video-header {
     align-self: flex-start;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 }
 
 .intro .container .content .video-container .video-header h1 {
@@ -274,6 +273,7 @@ main {
     text-align: left;
     text-transform: uppercase;
     color: #2E2E2E;
+    margin-top: 0;
     margin-bottom: 0;
     width: 1650px;
 }
