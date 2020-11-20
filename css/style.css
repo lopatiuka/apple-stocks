@@ -848,12 +848,9 @@ input::-webkit-input-placeholder {
     z-index: 10;
     font-size: 18px;
     text-decoration: none;
-    transition-property: background-color;
-    transition-duration: 0.2s;
 }
 
 .how-works .container .start-now-link:hover {
-    background-color: #2E2E2E;
     cursor: pointer;
 }
 
