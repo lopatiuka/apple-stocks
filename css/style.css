@@ -108,24 +108,19 @@ header .container {
 header .container .main-content {
     display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 1682px;
 }
 
-header .exposure{
-    margin-right: 100px;
-    position: absolute;
-    right: 0;
-    z-index: 10;
-}
-header .exposure .country {
+header .container .main-content .exposure .country {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header .exposure .caption {
+
+header .container .main-content .exposure .caption {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -135,7 +130,8 @@ header .exposure .caption {
     color: #606060;
     margin: 10px; 
 }
-header .exposure .country p {
+
+header .container .main-content .exposure .country p {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -146,7 +142,7 @@ header .exposure .country p {
     margin: 0; 
     text-transform: uppercase;
 }
-header .exposure .country img {
+header .container .main-content .exposure .country img {
     width: 42px;
     height: 42px;
     border-radius: 200px;
@@ -1607,11 +1603,11 @@ details[open] summary .round-button {
     }
 
     header .container .main-content {
-        width: 1000.31px;
+        width: 1177px;
     }
 
     .intro .container .content .video-container {
-        width: 657.2px;
+        width: 843px;
         height: auto;
     }
 
@@ -1622,7 +1618,7 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header {
-        margin-bottom: 70px;
+        margin-bottom: 130px;
     }
 
     .intro .container .content .form-container {
@@ -1855,10 +1851,6 @@ details[open] summary .round-button {
         justify-content: center;
     }
 
-    header .exposure {
-        margin-right: 50px;
-    }
-
     header .container .main-content {
         width: 1000.31px;
     }
@@ -1868,6 +1860,10 @@ details[open] summary .round-button {
         height: auto;
     }
 
+    .intro .container .content .video-container .video {
+        height: 390px;
+    }
+
     .intro .container .content .video-container .video-header h1 {
         font-size: 45px;
         text-align: left;
@@ -1875,7 +1871,7 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header {
-        align-self: center;
+        margin-bottom: 0;
     }
 
     .intro .container .content .form-container {
@@ -2101,9 +2097,12 @@ details[open] summary .round-button {
 }
 
 @media ( max-width: 1000px ) {
+    header .container {
+        width: 800px;
+    }   
+
     header .container .main-content {
         width: 100%;
-        justify-content: center;
     }
 
     header .container .main-content .navigation {
@@ -2126,27 +2125,25 @@ details[open] summary .round-button {
         flex-direction: column;
         align-items: center;
     }
+
     .intro .container .content .video-container {
-        width: 657.2px;
+        width: 800px;
         height: auto;
         margin-bottom: 100px;
     }
     
     .intro .container .content .form-container {
-        width: 524px;
+        width: 800px;
+        margin: 0;
     }
 
     .intro .container .content .form-container h2 {
-        width: 400px;
-        font-size: 18px;
-    }
-
-    .intro .container .content .form-container h2 {
+        width: 100%;
         font-size: 18px;
     }
 
     .intro .container .content .form-container form input {
-        width: 431.81px;
+        width: 708px;
     }
     .intro .container .content .form-container form input[type = submit]{
         height: 65.39px;
@@ -2155,7 +2152,11 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .form-container form .checkboxes {
-        width: 431.81px;
+        width: 708px;
+    }
+
+    .intro .container .content .form-container form .checkboxes span br {
+        display: none;
     }
 
     .intro .ribbon .logos img:nth-child(1){
@@ -2504,6 +2505,12 @@ details[open] summary .round-button {
     }
 }
 
+@media ( max-device-width: 1024px ) {
+    body {
+        width: 1098px;
+    }
+}
+
 @media ( max-device-width: 880px ) {
     body {
         width: 872px;
@@ -2562,45 +2569,14 @@ details[open] summary .round-button {
     header {
         width: 890px;
     }
-    .menu-icon {
-        right: -400px;
-    }
 
-    .menu-container {
-        position: absolute;
-        right: -500px;
-        width: 600px;
-        height: 800px;
-    }
-    
-    .menu-container .hide {
-        float: right;
-        margin: 15px;
-        font-size: 40px;
-    }
-    
-    .menu-container .hide:hover {
-        cursor: pointer;
-    }
-    
-    .menu-container .menu-links {
-        width: 100%;
-        height: 400px;
-    }
-    
-    .menu-container .menu-links a {
-        font-size: 50px;
-        margin-bottom: 50px;
-    }
-
-    .menu-container .menu-cannabis {
-        top: 550px;
-    }
+    header .container {
+        width: 800px;
+    } 
 
     header .exposure {
         display: flex;
         flex-direction: column;
-        right: -350px;
     }
 
     header .exposure .country {
