@@ -58,36 +58,15 @@
                                     </iframe>
                                 </div>
                             </div>
-                             <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
-                                <img src = "images/logo step 2.png">
-                                <h2 class = "form-header">Fill in the form & Join our Stock Followers Community</h2>
+                             <div id = "form2" class = "form-container hidden-form2" data-aos="fade-left" data-aos-duration="1500">
+                                <h2 class = "form-header">Complete the registration and open an account with Exness!</h2>
                                 <h3>STEP 2</h3>
+                                <img class = "image-step2" src = "images/exness-logo.png">
                                 <form>
-                                    <input type = "text" placeholder="Phone Number"/>
-                                    <input type = "password" placeholder="Password"/>
-                                    <input type = "password" placeholder="Confirm Password"/>
-                                    <div class="checkboxes">
-                                        <label>
-                                            <input type="checkbox"><span>By checking this box you agree to subscribe to Traders</br>
-                                            Expert & it’s affiliates brand assets newsletter</span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox"><span>By checking this box you agree to our
-                                                <a href="https://traders.expert/terms-conditions/" target="_blank">Terms</a>,
-                                                <a href="https://traders.expert/privacy-policy/" target="_blank">Privacy</a> &amp; 
-                                                <a href="https://traders.expert/spam-disclaimer/" target="_blank">Spam Disclaimer</a>
-                                            </span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox"><span>By checking this box you agree to our
-                                                <a href="https://traders.expert/privacy-policy/" target="_blank">GDPR</a> terms
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <input type = "submit" value = "Join Community"/>
+                                    <input type = "submit" value = "Open Account"/>
                                 </form>
                             </div> 
-                            <!-- <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
+                            <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
                                 <img src = "images/Stocks Man Logo Apple vertical.png">
                                 <h2 class = "form-header">Fill in the form & Join our Stock Followers Community</h2>
                                 <h3>STEP 1</h3>
@@ -113,9 +92,9 @@
                                             </span>
                                         </label>
                                     </div>
-                                    <input type = "submit" value = "Join Community"/>
+                                    <input id = "submit-button" type = "submit" value = "Join Community"/>
                                 </form>
-                            </div>    -->
+                            </div>   
                         </div>                                                                          
                     </div>
                     <div class = "ribbon">
@@ -445,6 +424,13 @@
         </div>
         <script>
             AOS.init();
+        </script>
+        <script>
+            $('#submit-button').click( function( e ){
+                e.preventDefault();
+                $('#form').addClass('hidden-form2');
+                $('#form2').removeClass('hidden-form2');
+            });
         </script>
         <script>
             $('.summary').click(function() {
