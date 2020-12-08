@@ -1154,6 +1154,10 @@ details[open] summary .round-button {
         height: 900px;
     }
 
+    .intro .container .content #form2 {
+        height: 900px;
+    }
+
     .intro .container .content .form-container {
         width: 700px;
         height: auto;
@@ -1171,6 +1175,13 @@ details[open] summary .round-button {
         width: 600px;
         height: 70px;
         font-size: 30px;
+    }
+
+    
+    .intro .container .content .form-container form input[type=submit]{
+        width: 300px;
+        height: 75px;
+        border-radius: 35px;
     }
 
     .intro .container .content .form-container form .checkboxes {
